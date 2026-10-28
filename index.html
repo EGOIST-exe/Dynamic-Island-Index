@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en" data-material="glass">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09090b">
+  <title>Dynamic Island — Your desktop, within reach.</title>
+  <meta name="description" content="A little island for your Windows desktop. Music, focus, files and more, right where you need them. Download Dynamic Island for Windows 10 and 11.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dynamic Island — Your desktop, within reach.">
+  <meta property="og:description" content="Music, focus, files and more. One little island for Windows.">
+  <meta property="og:url" content="https://egoist-exe.github.io/Dynamic-Island-Index/">
+  <meta property="og:image" content="https://egoist-exe.github.io/Dynamic-Island-Index/assets/social-preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://egoist-exe.github.io/Dynamic-Island-Index/">
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v4h16v-4"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7Z"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></symbol>
+    <symbol id="i-next" viewBox="0 0 24 24"><path d="m5 6 10 6-10 6ZM19 5v14"/></symbol>
+    <symbol id="i-prev" viewBox="0 0 24 24"><path d="m19 6-10 6 10 6ZM5 5v14"/></symbol>
+    <symbol id="i-music" viewBox="0 0 24 24"><path d="M9 18V5l11-2v13M9 8l11-2"/><ellipse cx="6" cy="18" rx="3" ry="3"/><ellipse cx="17" cy="16" rx="3" ry="3"/></symbol>
+    <symbol id="i-timer" viewBox="0 0 24 24"><circle cx="12" cy="14" r="8"/><path d="M9 2h6m-3 0v4m0 4v4l3 2m3-10 2-2"/></symbol>
+    <symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 6h7l2 3h9v11H3ZM3 9V5h7l2 3"/></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="3"/><circle cx="15" cy="17" r="3"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M5 16h14l-2-3V9A5 5 0 0 0 7 9v4Zm5 4h4"/></symbol>
+    <symbol id="i-screens" viewBox="0 0 24 24"><path d="M2 4h14v11H2Zm5 15h4m-2-4v4m10-12h3v11h-8"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="3"/><path d="M8 10V6a4 4 0 0 1 8 0v4m-4 4v3"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m7 7 10 10M7 17 17 7"/></symbol>
+    <symbol id="i-reset" viewBox="0 0 24 24"><path d="M4 10a8 8 0 1 1 1 9M4 4v6h6"/></symbol>
+    <symbol id="i-coffee" viewBox="0 0 24 24"><path d="M3 8h14v7a6 6 0 0 1-6 6H9a6 6 0 0 1-6-6Zm14 1h2a3 3 0 0 1 0 6h-2M7 2v2m5-2v2"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-windows" viewBox="0 0 24 24"><path d="M3 4h8v7H3Zm10 0h8v7h-8ZM3 13h8v7H3Zm10 0h8v7h-8Z"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M6 3h8l5 5v13H6Zm8 0v6h5M9 13h7m-7 4h5"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-4 1-4-2-5-2m10 5v-4a3 3 0 0 0-1-2c4 0 6-2 6-5a4 4 0 0 0-1-3 4 4 0 0 0 0-4s-2 0-4 2a12 12 0 0 0-6 0C6 4 4 4 4 4a4 4 0 0 0 0 4 4 4 0 0 0-1 3c0 3 2 5 6 5a3 3 0 0 0-1 2v4"/></symbol>
+  </defs></svg>
+
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+  <header class="header">
+    <nav class="nav-island" aria-label="Main navigation" id="navigation">
+      <button class="nav-trigger" type="button" aria-expanded="false" aria-controls="nav-links" data-i18n-label="navToggle">
+        <svg class="brand-mark" viewBox="0 150 500 200" aria-hidden="true"><image href="assets/brand.png" width="500" height="500"/></svg>
+        <span>Dynamic Island</span><span class="nav-chevron" aria-hidden="true"></span>
+      </button>
+      <div class="nav-links" id="nav-links" inert>
+        <a href="#features" data-i18n="navFeatures">Features</a>
+        <a href="#install" data-i18n="navInstall">Install</a>
+        <a href="https://ko-fi.com/eegoist" target="_blank" rel="noopener noreferrer" data-i18n="navSupport">Support</a>
+        <label class="language"><span class="sr-only" data-i18n="language">Language</span><select id="language" aria-label="Language"><option value="en">EN</option><option value="de">DE</option></select></label>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <a class="release-tag" href="https://github.com/EGOIST-exe/Dynamic-Island-Index/releases/latest"><span class="status-dot"></span><span data-i18n="release">Made for Windows</span><span class="release-version">v2.4.0</span><svg class="icon small"><use href="#i-arrow"/></svg></a>
+      <h1 id="hero-title"><span data-i18n="heroLine1">A little island.</span><br><span class="muted-gradient" data-i18n="heroLine2">A lot less switching.</span></h1>
+      <p class="hero-copy" data-i18n="heroCopy">Your music, your focus, your everyday essentials.<br>One quiet space at the edge of your Windows desktop.</p>
+      <div class="hero-actions"><a class="button primary" data-download href="https://github.com/EGOIST-exe/Dynamic-Island-Index/releases/latest/download/Dynamic-Island-Setup-x64.exe"><svg class="icon windows"><use href="#i-windows"/></svg><span data-i18n="download">Download for Windows</span><svg class="icon"><use href="#i-download"/></svg></a><a class="button subtle" href="#demo" id="see-demo"><span data-i18n="tryDemo">Try the Island</span><svg class="icon small"><use href="#i-arrow"/></svg></a></div>
+      <p class="download-meta"><span data-i18n="free">Free download</span><span aria-hidden="true">·</span>Windows 10 / 11<span aria-hidden="true">·</span>x64<span aria-hidden="true">·</span><span data-size>79.1 MB</span></p>
+    </section>
+
+    <section class="demo-section wrap" id="demo" aria-label="Interactive Dynamic Island demo">
+      <div class="desktop-frame">
+        <div class="desktop-caption"><span class="desktop-dots" aria-hidden="true"><i></i><i></i><i></i></span><span data-i18n="demoLabel">YOUR DESKTOP, WITHIN REACH.</span><span class="demo-badge" data-i18n="demoBadge">Interactive demo</span></div>
+        <div class="desktop" id="desktop">
+          <div class="wallpaper-orbit orbit-one" aria-hidden="true"></div><div class="wallpaper-orbit orbit-two" aria-hidden="true"></div>
+          <div class="demo-island" id="demo-island">
+            <div class="widget-body">
+              <div class="widget-panel" id="panel-music">
+                <div class="music-layout"><div class="cover-art" id="cover-art" aria-hidden="true"><div class="cover-orbit"></div></div><div class="track"><span class="eyebrow" data-i18n="musicPreview">MUSIC / DEMO</span><strong id="song-title">Midnight signals</strong><span id="song-artist">Island sessions</span></div><div class="equalizer" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="transport"><button class="icon-button" id="previous" type="button" data-i18n-label="previous"><svg class="icon"><use href="#i-prev"/></svg></button><button class="icon-button play-button" id="play" type="button" aria-pressed="false" data-i18n-label="pause"><svg class="icon"><use id="play-symbol" href="#i-pause"/></svg></button><button class="icon-button" id="next" type="button" data-i18n-label="next"><svg class="icon"><use href="#i-next"/></svg></button></div><div class="lyric-preview"><span class="eyebrow" data-i18n="lyricsPreview">A LITTLE ROOM FOR LYRICS</span><strong data-i18n="sampleLyric">Your music. Your moment.</strong><span data-i18n="sampleLyric2">Right where you need it.</span></div></div>
+                <div class="progress-row"><span id="elapsed">0:42</span><label class="sr-only" for="seek" data-i18n="seek">Demo song position</label><input id="seek" type="range" min="0" max="224" value="42"><span>3:44</span></div>
+              </div>
+              <div class="widget-panel" id="panel-timer" hidden><div class="timer-layout"><div><span class="eyebrow" data-i18n="focusTitle">TIME FOR A LITTLE FOCUS</span><strong class="timer-time" id="timer-time">25:00</strong></div><div class="timer-actions"><button class="mini-button" id="timer-toggle" type="button" data-i18n="timerStart">Start focus</button><button class="icon-button" id="timer-reset" type="button" data-i18n-label="reset"><svg class="icon"><use href="#i-reset"/></svg></button></div><span class="timer-note" id="timer-note" data-i18n="timerNote">One thing at a time.</span></div></div>
+              <div class="widget-panel" id="panel-files" hidden><div class="files-heading"><span class="eyebrow" data-i18n="filesTitle">A LITTLE SPACE FOR YOUR FILES</span><button id="restore-files" class="text-button" type="button" data-i18n="restoreFiles">Restore demo</button></div><div class="file-shelf" id="file-shelf"></div></div>
+              <div class="widget-footer"><span class="widget-status" data-i18n="demoOnly">Preview · no account connected</span><div class="widget-tabs" role="tablist" aria-label="Demo widgets"><button type="button" class="icon-button" role="tab" aria-selected="true" aria-controls="panel-music" id="tab-music" data-widget="music" data-i18n-label="music"><svg class="icon"><use href="#i-music"/></svg></button><button type="button" class="icon-button" role="tab" aria-selected="false" aria-controls="panel-timer" id="tab-timer" data-widget="timer" tabindex="-1" data-i18n-label="timer"><svg class="icon"><use href="#i-timer"/></svg></button><button type="button" class="icon-button" role="tab" aria-selected="false" aria-controls="panel-files" id="tab-files" data-widget="files" tabindex="-1" data-i18n-label="files"><svg class="icon"><use href="#i-folder"/></svg></button></div><svg class="icon lock-icon" aria-hidden="true"><use href="#i-lock"/></svg></div>
+            </div>
+          </div>
+          <div class="desktop-note" aria-hidden="true"><span data-i18n="wallpaperSmall">LESS IN THE WAY.</span><span data-i18n="wallpaperBig">More in your flow.</span></div>
+          <div class="desktop-bottom"><span data-i18n="desktopHint">A small move to the edge. Everything you need.</span><button class="replay-button" type="button" id="replay"><svg class="icon small"><use href="#i-reset"/></svg><span data-i18n="replay">Replay animation</span></button></div>
+        </div>
+      </div>
+      <div class="demo-under"><span><span class="tiny-dot" aria-hidden="true"></span><span data-i18n="demoInstruction">Press play. Switch widgets. Make yourself at home.</span></span><span class="demo-counter">01 — 03</span></div>
+    </section>
+
+    <section class="features wrap section" id="features" aria-labelledby="feature-title">
+      <div class="section-heading"><span class="kicker" data-i18n="featuresKicker">SMALL ON PURPOSE</span><h2 id="feature-title" data-i18n="featuresTitle">Your shortcuts to<br>a smoother day.</h2><p data-i18n="featuresCopy">Useful when you need it. Out of sight when you don't.<br>Move to your activation area and let the Island come to you.</p></div>
+      <div class="feature-list">
+        <article><svg class="feature-icon"><use href="#i-music"/></svg><h3 data-i18n="featureMusic">Keep the music going.</h3><p data-i18n="featureMusicCopy">Play, pause, skip and seek with Windows media controls. Add synced lyrics and an audio-reactive visualizer.</p><span class="feature-detail" data-i18n="featureMusicDetail">Spotify and other supported players</span></article>
+        <article><svg class="feature-icon"><use href="#i-timer"/></svg><h3 data-i18n="featureFocus">Find a little focus.</h3><p data-i18n="featureFocusCopy">A focus timer, countdown, stopwatch and to-dos. The little things that keep the day moving.</p><span class="feature-detail" data-i18n="featureFocusDetail">Your tools, in your order</span></article>
+        <article><svg class="feature-icon"><use href="#i-folder"/></svg><h3 data-i18n="featureFiles">Keep things close.</h3><p data-i18n="featureFilesCopy">Drop files onto your shelf, keep clipboard entries handy and pin quick actions for the apps you use most.</p><span class="feature-detail" data-i18n="featureFilesDetail">Less window-hopping</span></article>
+        <article><svg class="feature-icon"><use href="#i-screens"/></svg><h3 data-i18n="featureScreens">At home on your setup.</h3><p data-i18n="featureScreensCopy">Choose a monitor, position, activation area and scale. Pin a widget or let the Island tuck itself away.</p><span class="feature-detail" data-i18n="featureScreensDetail">Built for Windows 10 and 11</span></article>
+      </div>
+    </section>
+
+    <section class="customize wrap section" aria-labelledby="customize-title"><div class="customize-copy"><span class="kicker" data-i18n="customKicker">A LITTLE MORE YOU</span><h2 id="customize-title" data-i18n="customTitle">Your Island.<br>Your atmosphere.</h2><p data-i18n="customCopy">Liquid glass or quietly monochrome. Animated gradients, your own GIFs, fonts and icons. Create a look that feels like your desktop.</p><p class="share-note"><svg class="icon"><use href="#i-sliders"/></svg><span data-i18n="shareCopy">Share your design as a profile, an animated GIF, or both.</span></p></div><div class="material-lab"><div class="material-label"><span data-i18n="materialLabel">PICK A FEELING</span><span data-i18n="liveDemo">LIVE PREVIEW</span></div><div class="mini-wallpaper"><div class="mini-island"><svg class="mini-brand" viewBox="0 150 500 200" aria-hidden="true"><image href="assets/brand.png" width="500" height="500"/></svg><span>Dynamic Island</span><div class="mini-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div></div></div><div class="material-options" role="group" aria-label="Demo material"><button type="button" data-material="glass" aria-pressed="true"><span class="swatch glass"></span>Liquid Glass</button><button type="button" data-material="mono" aria-pressed="false"><span class="swatch mono"></span><span data-i18n="mono">Monochrome</span></button><button type="button" data-material="aurora" aria-pressed="false"><span class="swatch aurora"></span>Aurora</button></div><p class="material-note" data-i18n="materialNote">Try a style here. Fine-tune every detail in the app.</p><span id="material-message" class="sr-only" aria-live="polite"></span></div></section>
+
+    <section class="install wrap section" id="install" aria-labelledby="install-title"><div class="section-heading"><span class="kicker" data-i18n="installKicker">MAKE A LITTLE SPACE</span><h2 id="install-title" data-i18n="installTitle">Your desktop's<br>next small upgrade.</h2><p data-i18n="installCopy">Download the Windows installer and settle in.<br>No separate .NET installation needed.</p></div><div class="install-panel"><div class="install-top"><div class="download-app-mark"><svg viewBox="0 150 500 200" aria-hidden="true"><image href="assets/brand.png" width="500" height="500"/></svg></div><div><h3>Dynamic Island <span class="version-label release-version">v2.4.0</span></h3><p>Windows 10 / 11 · x64 · <span data-size>79.1 MB</span></p></div><a class="button primary" data-download href="https://github.com/EGOIST-exe/Dynamic-Island-Index/releases/latest/download/Dynamic-Island-Setup-x64.exe"><svg class="icon"><use href="#i-download"/></svg><span data-i18n="downloadInstaller">Download installer</span></a></div><ol class="install-steps"><li><span>01</span><div><h4 data-i18n="step1">Run the setup.</h4><p data-i18n="step1Copy">Open the downloaded EXE. Review the development-certificate notice and confirm if you want to continue.</p></div></li><li><span>02</span><div><h4 data-i18n="step2">Make it yours.</h4><p data-i18n="step2Copy">Open Settings from the tray. Choose your monitor, style and favorite widgets.</p></div></li><li><span>03</span><div><h4 data-i18n="step3">Find your flow.</h4><p data-i18n="step3Copy">Move your mouse into the activation area. Pin the Island if you want it to stay.</p></div></li></ol><div class="install-foot"><span data-i18n="buildNote">Development build · certificate approval required</span><a href="https://github.com/EGOIST-exe/Dynamic-Island-Index/releases/latest" data-i18n="releaseNotes">Release notes & other downloads</a></div></div></section>
+
+    <section class="faq wrap section" aria-labelledby="faq-title"><div class="faq-heading"><span class="kicker" data-i18n="faqKicker">THE LITTLE DETAILS</span><h2 id="faq-title" data-i18n="faqTitle">Good to know.</h2></div><div class="faq-items"><details><summary data-i18n="q1">Why does the installer ask about a certificate?</summary><p data-i18n="a1">This release uses a development signing certificate, rather than a publicly trusted publisher certificate. The setup explains this and asks for your consent before adding its public certificate to Windows Trusted People, with administrator approval. Review the prompt before installing.</p></details><details><summary data-i18n="q2">Does it only work with Spotify?</summary><p data-i18n="a2">No. Media controls use Windows media sessions, so other players and browser media can work too when they expose those controls. Online synced lyrics are optional and use LRCLIB.</p></details><details><summary data-i18n="q3">Can it display every Discord message and call?</summary><p data-i18n="a3">Not every one. The optional Discord connection can receive supported client events and learn reported private chats. Complete DM discovery and reliable private-call ringing detection are not available through the current connection. Accept/reject controls use Discord keyboard shortcuts.</p></details><details><summary data-i18n="q4">Can it start quietly with Windows?</summary><p data-i18n="a4">Yes. Autostart runs the app in the background. Open Settings from its tray icon whenever you need them. You can change startup behavior in the app.</p></details><details><summary data-i18n="q5">Where can I get help or share my setup?</summary><p><span data-i18n="a5">Join the Discord community for feedback, questions and sharing your Island.</span> <a href="https://discord.gg/FFuMpJg6yj" target="_blank" rel="noopener noreferrer" data-i18n="joinDiscord">Join our Discord</a></p></details></div></section>
+
+    <section class="support wrap section" aria-labelledby="support-title"><div class="coffee-art" aria-hidden="true"><svg><use href="#i-coffee"/></svg><span class="coffee-steam"></span></div><div><span class="kicker" data-i18n="supportKicker">A LITTLE SUPPORT GOES A LONG WAY</span><h2 id="support-title" data-i18n="supportTitle">Like your little Island?</h2><p data-i18n="supportCopy">If it makes your day a little better, you can buy me a coffee.<br>Always appreciated. Never required.</p></div><a class="button coffee-button" href="https://ko-fi.com/eegoist" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-coffee"/></svg><span data-i18n="coffee">Buy me a coffee</span><svg class="icon small"><use href="#i-arrow"/></svg></a></section>
+  </main>
+
+  <footer class="footer wrap"><a class="footer-brand" href="#main"><svg viewBox="0 150 500 200" aria-hidden="true"><image href="assets/brand.png" width="500" height="500"/></svg><span>Dynamic Island</span></a><span class="credit">made by <a href="https://github.com/EGOIST-exe" target="_blank" rel="noopener noreferrer">EGOIST</a></span><div class="footer-links"><a href="https://github.com/EGOIST-exe/Dynamic-Island-Index" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://discord.gg/FFuMpJg6yj" target="_blank" rel="noopener noreferrer">Discord</a><a href="https://ko-fi.com/eegoist" target="_blank" rel="noopener noreferrer">Ko-fi</a></div></footer>
+</body>
+</html>

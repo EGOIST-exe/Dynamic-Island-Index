@@ -1,0 +1,11 @@
+{
+  "name": "dynamic-island-index",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "check": "node --check app.js && node scripts/check.mjs"
+  }
+}
