@@ -1,2 +1,2 @@
-0ec5a349a68ffd61a82bfe736d2bc00162b1a541e7464c5ec72e92558e0501cb  Dynamic-Island-Setup-x64.exe
-618d5e6f800f7e9101fd1cf59e8b849a702a94c3edbdaa4698f476b3ad52a974  Dynamic-Island-x64.msix
+feef286e3be65b787815ff94f47f73b7545d76024807749610c182ccb04352e7  Dynamic-Island-Setup-x64.exe
+a9dbf50698bf1d53d6285a11a2e1e9f88a8a83fcfb86e4bf3c8c09b4cf10121e  Dynamic-Island-x64.msix
